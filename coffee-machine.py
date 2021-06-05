@@ -34,6 +34,7 @@ profit = 0
 
 #TODO Print report by entering "report".
 def report(resources, profit):
+    """ Prints out the amount of water, milk, coffee, and money in machine. """
     water = resources["water"]
     milk = resources["milk"]
     coffee = resources["coffee"]
@@ -44,7 +45,7 @@ def report(resources, profit):
 
 #TODO 3. Check resources sufficient when the user chooses a drink
 def check_resources(resources, menu, drink):
-    """If there's enough water, milk, and coffee for the drink, return True or False"""
+    """Returns True if there's enough water, milk, and coffee for the drink. """
     sufficient_resources = False
 
     water_remaining = resources["water"] - menu[drink]["ingredients"]["water"]
@@ -57,11 +58,11 @@ def check_resources(resources, menu, drink):
     if water_remaining >= 0 and milk_remaining >= 0 and coffee_remaining >= 0:
         sufficient_resources = True
     if water_remaining < 0:
-        print("Sorry there is not enough water.")
+        print("Sorry there is not enough water.​")
     elif milk_remaining < 0:
-        print("Sorry there is not enough milk.")
+        print("Sorry there is not enough milk.​")
     elif coffee_remaining < 0:
-        print("Sorry there is not enough coffee.")
+        print("Sorry there is not enough coffee.​")
     
     return sufficient_resources
 
@@ -76,7 +77,7 @@ def payment(menu, drink, profit, quarters, dimes, nickels, pennies):
     drink_cost = menu[drink]["cost"]
     money = (quarters * 0.25) + (dimes * 0.10) + (nickels * 0.05) + (pennies * 0.01)
     if money < drink_cost:
-        print("Sorry that's not enough money. Money refunded.")
+        print("​Sorry that's not enough money. Money refunded.​")
     elif money >= drink_cost:
         profit += drink_cost
         change = money - drink_cost
@@ -90,7 +91,7 @@ def payment(menu, drink, profit, quarters, dimes, nickels, pennies):
 #TODO 7. Tell user: "Here is your {drink}. Enjoy!"
 
 def make_coffee(resources, menu, drink):
-    """Takes user's drink info and returns remaining resources in coffee machine"""
+    """Subtracts resources used to make user's drink and returns remaining resources."""
     print(f"Here is your {drink} ☕️ Enjoy!")
 
     water = resources["water"]
@@ -104,10 +105,10 @@ def make_coffee(resources, menu, drink):
     
     return water, coffee, milk
 
-#TODO 1. Prompt user by asking “What would you like? (espresso/latte/cappuccino)
+#TODO 1. Prompt user by asking “​What would you like? (espresso/latte/cappuccino)
 #TODO 1a. The prompt should show every time action has completed, e.g. once the drink is dispensed. The prompt should show again to serve the next customer.
 #TODO 2. Check the user’s input to decide what to do next.
-#TODO Turn off the Coffee Machine by entering “off” to the prompt.     
+#TODO Turn off the Coffee Machine by entering “​off”​to the prompt.     
 
 machine_running = True
 while machine_running:
