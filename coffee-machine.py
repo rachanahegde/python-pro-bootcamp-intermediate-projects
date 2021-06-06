@@ -58,11 +58,11 @@ def check_resources(resources, menu, drink):
     if water_remaining >= 0 and milk_remaining >= 0 and coffee_remaining >= 0:
         sufficient_resources = True
     if water_remaining < 0:
-        print("Sorry there is not enough water.​")
-    elif milk_remaining < 0:
-        print("Sorry there is not enough milk.​")
-    elif coffee_remaining < 0:
-        print("Sorry there is not enough coffee.​")
+        print("Sorry there is not enough water.")
+    if milk_remaining < 0:
+        print("Sorry there is not enough milk.")
+    if coffee_remaining < 0:
+        print("Sorry there is not enough coffee.")
     
     return sufficient_resources
 
@@ -77,7 +77,7 @@ def payment(menu, drink, profit, quarters, dimes, nickels, pennies):
     drink_cost = menu[drink]["cost"]
     money = (quarters * 0.25) + (dimes * 0.10) + (nickels * 0.05) + (pennies * 0.01)
     if money < drink_cost:
-        print("​Sorry that's not enough money. Money refunded.​")
+        print("Sorry that's not enough money. Money refunded.")
     elif money >= drink_cost:
         profit += drink_cost
         change = money - drink_cost
@@ -105,10 +105,10 @@ def make_coffee(resources, menu, drink):
     
     return water, coffee, milk
 
-#TODO 1. Prompt user by asking “​What would you like? (espresso/latte/cappuccino)
+#TODO 1. Prompt user by asking “What would you like? (espresso/latte/cappuccino)
 #TODO 1a. The prompt should show every time action has completed, e.g. once the drink is dispensed. The prompt should show again to serve the next customer.
 #TODO 2. Check the user’s input to decide what to do next.
-#TODO Turn off the Coffee Machine by entering “​off”​to the prompt.     
+#TODO Turn off the Coffee Machine by entering “off” to the prompt.     
 
 machine_running = True
 while machine_running:
