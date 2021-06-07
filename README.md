@@ -7,4 +7,4 @@ A coffee machine that dispenses three drinks: espresso, latte, and cappuccino.
 Rebuilt the coffee machine using objected oriented programming. Angela provided all the classes and corrresponding documentation for building each object.
 
 <h3> Day 17: Quiz Game </h3>
-Learned to construct classes. Built a game that quizzes you on random trivia and you get a point for each right answer. 
+A game that quizzes you on random trivia, built with OOP. 
