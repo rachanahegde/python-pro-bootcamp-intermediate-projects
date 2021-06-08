@@ -8,3 +8,6 @@ Rebuilt the coffee machine using objected oriented programming. Angela provided 
 
 <h3> Day 17: Quiz Game </h3>
 A game that quizzes you on random trivia, built with OOP. 
+
+<h3> Day 18:  </h3>
+Learned how to read and use documentation by doing a series of challenges involving the turtle graphics library. 
