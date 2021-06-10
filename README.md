@@ -10,4 +10,7 @@ Rebuilt the coffee machine using objected oriented programming. Angela provided 
 A game that quizzes you on random trivia, built with OOP. 
 
 <h3> Day 18: The Hirst Painting </h3>
-Learned how to read and use documentation by doing a series of challenges involving the turtle graphics library. For the Hirst Painting project, I used the Colorgram package to extract colors from an image. Then, I used turtle and the colors I extracted to create a spot painting. 
+Learned how to read and use documentation by doing a series of challenges involving the Turtle graphics library. For the Hirst Painting project, I used the Colorgram package to extract colors from an image. Then, I used turtle and the colors I extracted to create a spot painting. 
+
+<h3> Day 19: Turtle Race </h3>
+Place a bet on one of six turtles (each a color of the rainbow) and watch them race! Each turtle moves at a randomly assigned speed so you may or may not get lucky. This project was built using the Turtle graphics library.
