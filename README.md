@@ -16,4 +16,4 @@ Learned how to read and use documentation by doing a series of challenges involv
 Place a bet on one of six turtles (each a color of the rainbow) and watch them race! Each turtle moves at a randomly assigned speed so you may or may not get lucky. This project was built using the Turtle graphics library.
 
 <h2> Day 20-21: The Snake Game </h2>
-This project is based on the previously popular phone snake games. In this game, you can move a snake to avoid colliding with the walls and consume food to gain points.
+Move a snake using the arrow keys and try to avoid colliding with the walls while consuming food to gain points.
