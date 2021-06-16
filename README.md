@@ -17,3 +17,6 @@ Place a bet on one of six turtles (each a color of the rainbow) and watch them r
 
 <h2> Day 20-21: The Snake Game </h2>
 Move a snake using the arrow keys and try to avoid colliding with the walls while consuming food to gain points.
+
+<h2> Day 22: Build Pong: The Famous Arcade Game </h2>
+Two players each control a paddle, bouncing a ball back and forth across a table. If you miss the ball, the other player scores a point. 
