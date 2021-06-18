@@ -20,3 +20,6 @@ Move a snake using the arrow keys and try to avoid colliding with the walls whil
 
 <h2> Day 22: Build Pong: The Famous Arcade Game </h2>
 Two players each control a paddle, bouncing a ball back and forth across a table. If you miss the ball, the other player scores a point. 
+ 
+<h2> Day 23: The Turtle Crossing Capstone Project </h2>
+There are a bunch of cars driving past on an mult-line highway and our player is the turtle who has to cross the road. This project tested my knowledge and understanding of creating classes, class inheritance, and using objects.
