@@ -25,4 +25,4 @@ Two players each control a paddle, bouncing a ball back and forth across a table
 Just your classic turtle crossing game. There's an incredibly busy multi-line highway and one intrepid turtle who has to cross the road without getting hit by a car. This project tested my understanding of object oriented programming, especially creating classes and class inheritance.
 
 <h2> Day 24: Mail Merge Project </h2>
-Mail merging involves taking a list of names and inserting each name into a letter (e.g. Dear [name], you're invited to my birthday.). 
+Mail merging involves taking a list of names and inserting each name into a letter (e.g. Dear [name], you're invited to my birthday.). This challenge involved using what I learned about file paths and directories.
