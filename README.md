@@ -28,4 +28,4 @@ Just your classic turtle crossing game. There's an incredibly busy multi-line hi
 Mail merging involves taking a list of names and inserting each name into a letter. This project also tested my understanding of file paths and directories.
 
 <h2> Day 25: The U.S. States Game </h2>
-This project involved learning to work with CSV data and the Pandas library. The U.S. States Game involves guessing the names of states on a map of the United States.
+This project involved learning to work with CSV data and the Pandas library. The U.S. States Game involves guessing the names of states on a map of the United States. The aim of the game is to remember all of the names of the states and to name as many of them as you can. 
