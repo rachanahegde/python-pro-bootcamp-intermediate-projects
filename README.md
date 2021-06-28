@@ -31,5 +31,4 @@ Mail merging involves taking a list of names and inserting each name into a lett
 This project involved learning to work with CSV data and the Pandas library. The U.S. States Game helps you learn all the states names by using a blank map of the US to guess the names of states.
 
 <h2> Day 26: The NATO Alphabet Project </h2>
-Learned about dictionary and list comprehensions.
-This program allows you to spell any word you enter into the console, using the NATO phonetic alphabet.
+I learned how to use dictionary and list comprehensions to complete this project. This program spells any word you enter into the console using the NATO phonetic alphabet. Pretty handy when you're explaining to someone over the phone how to spell your name!
