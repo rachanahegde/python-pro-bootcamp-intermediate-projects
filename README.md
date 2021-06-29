@@ -32,3 +32,6 @@ This project involved learning to work with CSV data and the Pandas library. The
 
 <h2> Day 26: The NATO Alphabet Project </h2>
 I learned how to use dictionary and list comprehensions to complete this project. This program spells any word you enter into the console using the NATO phonetic alphabet. Pretty handy when you're explaining to someone over the phone how to spell your name!
+
+<h2> Day 27: Mile to Kilometers Converter Project </h2>
+Today we dived into graphical user interfaces with Tkinter and learned more about function arguments in order to build a unit converter program using Tkinter. 
