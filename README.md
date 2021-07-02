@@ -34,7 +34,7 @@ This project involved learning to work with CSV data and the Pandas library. The
 I learned how to use dictionary and list comprehensions to complete this project. This program spells any word you enter into the console using the NATO phonetic alphabet. Pretty handy when you're explaining to someone over the phone how to spell your name!
 
 <h2> Day 27: Mile to Kilometers Converter GUI Project </h2>
-Today, we dived into graphical user interfaces with Tkinter and learned more about function arguments in order to build a unit converter program.
+Today, I dived into graphical user interfaces with Tkinter and learned more about function arguments in order to build a unit converter program.
 
 <h2> Day 28: Pomodoro GUI Application </h2>
-Today, we built a pomodoro app from scratch using Tkinter. This is a handy time management tool that uses the pomodoro technique to time each work session (25 mins) and the (5 min) breaks that follow.
+Today, I built a pomodoro app from scratch using Tkinter. This is a handy time management tool that uses the pomodoro technique to time each work session (25 mins) and the (5 min) breaks that follow.
