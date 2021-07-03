@@ -38,3 +38,6 @@ Today, I dived into graphical user interfaces with Tkinter and learned more abou
 
 <h2> Day 28: Pomodoro GUI Application </h2>
 Today, I built a pomodoro app from scratch using Tkinter. This is a handy time management tool that uses the pomodoro technique to time each work session (25 mins) and the (5 min) breaks that follow.
+
+<h2> Day 29: Password Manager GUI App </h2>
+Today, I built a password manager GUI app with Tkinter. This app is used to store and generate passwords. All data is stored locally on your computer so it's more secure than a third party service! 
