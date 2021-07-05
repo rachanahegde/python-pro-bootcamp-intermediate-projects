@@ -1,4 +1,4 @@
-<h1> Intermediate Projects from 100 Days of Code
+<h1> Intermediate Projects from the 100 Days of Code Python Pro Bootcamp </h1>
 
 <h2> Day 15: Coffee Machine Project </h2>
 A coffee machine that dispenses three drinks: espresso, latte, and cappuccino.
