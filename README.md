@@ -43,4 +43,4 @@ Today, I built a pomodoro app from scratch using Tkinter. This is a handy time m
 This password manager GUI app was built with Tkinter and can be used to store and generate passwords. 
 
 <h2> Day 30: Improving the Password Manager </h2>
-Today's focus was learning about errors and exceptions to make the password manager app function more smoothly. Also, learned to save JSON data to add a new feature to the password manager where the user can search through their database of saved websites to find the appropriate login information.
+I learned about error handling and working with JSON data. Then, I added a search feature to the password manager to help the user find saved passwords.
