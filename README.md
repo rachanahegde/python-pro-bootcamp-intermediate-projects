@@ -45,5 +45,5 @@ This password manager GUI app was built with Tkinter and can be used to store an
 <h2> Day 30: Improving the Password Manager </h2>
 I learned about error handling and working with JSON data. Then, I added a search feature to the password manager to help the user find saved passwords.
 
-<h2> Day 31: Capstone Project: Flashcard Program </h2>
+<h2> Day 31: Capstone Project: Flashcard App </h2>
 A flash card app to help you study vocab when you're learning a new language.
