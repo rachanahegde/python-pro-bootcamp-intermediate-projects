@@ -1,23 +1,25 @@
 from tkinter import *
 import pandas
 import random
-import os
-BACKGROUND_COLOR = "#B1DDC6"
 
 # ---------------------------- CREATE FLASH CARDS ------------------------------- #
 
+BACKGROUND_COLOR = "#B1DDC6"
+to_learn = {}
 current_card = {}
+
+try:
+    data = pandas.read_csv("data/words_to_learn.csv")
+except FileNotFoundError:
+    original_data = pandas.read_csv("data/french_words.csv")
+    to_learn = original_data.to_dict(orient="records")
+else:
+    to_learn = data.to_dict(orient="records")
+
 
 def next_card():
     global current_card, flip_timer
     window.after_cancel(flip_timer)
-
-    try:
-        data = pandas.read_csv("words_to_learn.csv")
-    except FileNotFoundError:
-        data = pandas.read_csv("data/french_words.csv")
-
-    to_learn = data.to_dict(orient="records")
     current_card = random.choice(to_learn)
     french_word = current_card['French']
     canvas.itemconfig(canvas_image, image=card_front_img)
@@ -37,34 +39,11 @@ def flip_card():
 # ---------------------------- PROGRESS SAVING ------------------------------- #
 
 
-try:
-    words_data = pandas.read_csv("words_to_learn.csv")
-except FileNotFoundError:
-    original_data = pandas.read_csv("data/french_words.csv")
-    french_list = original_data["French"].to_list()
-    english_list = original_data["English"].to_list()
-else:
-    french_list = words_data["French"].to_list()
-    english_list = words_data["English"].to_list()
-
-words_to_learn = pandas.DataFrame({
-    "French": french_list,
-    "English": english_list,
-})
-
-
 def save_progress():
+    to_learn.remove(current_card)
+    data = pandas.DataFrame(to_learn)
+    data.to_csv("data/words_to_learn.csv", index=False)
     next_card()
-    global current_card
-    french_list.remove(current_card["French"])
-    english_list.remove(current_card["English"])
-    global words_to_learn
-    words_to_learn = pandas.DataFrame({
-        "French": french_list,
-        "English": english_list,
-    })
-    words_to_learn.to_csv("words_to_learn.csv", index=False)
-
 
 # ---------------------------- UI SETUP ------------------------------- #
 
