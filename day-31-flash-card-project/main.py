@@ -1,17 +1,15 @@
 from tkinter import *
 import pandas
 import random
-
+import os
 BACKGROUND_COLOR = "#B1DDC6"
 
 # ---------------------------- CREATE FLASH CARDS ------------------------------- #
 
-data = pandas.read_csv("data/french_words.csv")
 current_card = {}
 
-
 def next_card():
-    global current_card, flip_timer, data
+    global current_card, flip_timer
     window.after_cancel(flip_timer)
 
     try:
@@ -39,8 +37,16 @@ def flip_card():
 # ---------------------------- PROGRESS SAVING ------------------------------- #
 
 
-french_list = data["French"].to_list()
-english_list = data["English"].to_list()
+try:
+    words_data = pandas.read_csv("words_to_learn.csv")
+except FileNotFoundError:
+    original_data = pandas.read_csv("data/french_words.csv")
+    french_list = original_data["French"].to_list()
+    english_list = original_data["English"].to_list()
+else:
+    french_list = words_data["French"].to_list()
+    english_list = words_data["English"].to_list()
+
 words_to_learn = pandas.DataFrame({
     "French": french_list,
     "English": english_list,
