@@ -29,13 +29,12 @@ for name in list_names:
 # TODO: Replace the [name] placeholder with the actual name.
 # TODO: Save the letters in the folder "ReadyToSend".
 
-# ------------------- Alternative Solution ----------------- #
+# ------------------------ Alternative Solution --------------------------- #
 # PLACEHOLDER = "[name]"
-
-
+#
 # with open("./Input/Names/invited_names.txt") as names_file:
 #     names = names_file.readlines()
-
+#
 # with open("./Input/Letters/starting_letter.txt") as letter_file:
 #     letter_contents = letter_file.read()
 #     for name in names:
